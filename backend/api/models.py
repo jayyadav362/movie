@@ -34,4 +34,4 @@ class Rating(models.Model):
         index_together = (('user','movie'),)
 
     def __str__(self):
-        return self.movie, self.user
+        return self.movie.title + ',' + self.user.username
